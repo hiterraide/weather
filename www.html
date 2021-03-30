@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 id="h1">Weather</h1>
+        <form action="">
+            <label class="p1" for="weather">choose a Weather:</label>
+                <select name="weather" id="weather">
+                    <option disabled selected value="Choose weather">Choose</option>
+                    <option value="sunny">Sunny</option>
+                    <option value="rainy">Rainy</option>
+                </select> 
+                <br>
+               <label class="p1" for="temp">choose a Temperature:</label>
+                <input type="range" name="temp" id="temp" min="-40" max="40" value="0" step="5"> 
+               <br>
+            <input id="add_forecast" type="button" value="create" onclick="add_weather()">
+            <input id="rem_forecast" type="button" value="delete" onclick="rem_weather()">
+        </form>
+    <div class="weather"  style="height: 400px; margin: 2%; border: 5px solid black; display: flex; justify-content: space-around;">
+        
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
